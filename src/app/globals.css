@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#hero-btn {
+  background: linear-gradient(90deg,
+      rgb(104, 88, 219) -7.46%,
+      rgb(57, 50, 175) 100%);
+}
+
+#hero-bg {
+  background: url("../../public/home-hero-bg.mp4");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#home-bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: auto;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+#why-bg {
+  background: url("../../public/gradient-bg.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#partners-bg {
+  background: url("../../public/partners-bg.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#dropdown-bg {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#stake-hero-bg {
+  background: url("../../public/staking/bg.webp");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#mobile-nav-slider {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+#menu-close {
+  display: none;
+}
+
+#mobile-nav-control-parent:has(#mobile-nav-control:checked) #menu-open {
+  display: none;
+}
+
+#mobile-nav-control-parent:has(#mobile-nav-control:checked) #menu-close {
+  display: block;
+}
+
+#mobile-nav-control-parent:has(#mobile-nav-control:checked)~#mobile-nav-slider {
+  height: fit-content;
+  padding: 1.5rem 0;
+}
+
+@media (min-width: 842px) {
+  #mobile-nav {
+    display: none;
+  }
+}
