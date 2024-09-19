@@ -158,7 +158,7 @@ const StakeTab = () => {
                     >
                         {selectedCoin?.img ? (
                             <Image
-                                src={selectedCoin?.img}
+                                src={`${process.env.BASE_PATH}${selectedCoin?.img}`}
                                 width={selectedCoin?.width}
                                 height={selectedCoin?.height}
                                 alt={selectedCoin?.shortName}

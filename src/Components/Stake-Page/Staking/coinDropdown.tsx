@@ -22,7 +22,7 @@ const CoinDropdown = ({ divRef, handleCoinSelection, handleCoinDropdown }: Props
                         stakeData.map((data, i) => (
                             <span className="w-full flex items-center justify-between gap-4 text-sm font-semibold cursor-pointer" key={i} onClick={() => handleCoinSelection(data)}>
                                 <p className="m-0 font-semibold flex items-center gap-2">
-                                    <Image src={data.img} width={data.width} height={data.height} alt={data.shortName} />
+                                    <Image src={`${process.env.BASE_PATH}${data.img}`} width={data.width} height={data.height} alt={data.shortName} />
                                     {data.shortName}
                                 </p>
                             </span>
@@ -43,7 +43,7 @@ const CoinDropdown = ({ divRef, handleCoinSelection, handleCoinDropdown }: Props
                         stakeData.map((data, i) => (
                             <span className="w-full flex items-center justify-between gap-4 text-sm font-semibold" key={i} onClick={() => handleCoinSelection(data)}>
                                 <p className="m-0 font-semibold flex items-center gap-2">
-                                    <Image src={data.img} width={data.width} height={data.height} alt={data.shortName} />
+                                    <Image src={`${process.env.BASE_PATH}${data.img}`} width={data.width} height={data.height} alt={data.shortName} />
                                     {data.shortName}
                                 </p>
                             </span>

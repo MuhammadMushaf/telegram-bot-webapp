@@ -54,7 +54,7 @@ export default function Carousel() {
                             leaveFrom="opacity-100 scale-100"
                             leaveTo="opacity-0 scale-95"
                         >
-                            <Image className="rounded-xl h-52 max-lg:h-32 max-md:h-24 max-sm:h-16" src={item} width={1500} height={100} alt='img' />
+                            <Image className="rounded-xl h-52 max-lg:h-32 max-md:h-24 max-sm:h-16" src={`${process.env.BASE_PATH}${item}`} width={1500} height={100} alt='img' />
                         </Transition>
                     ))}
 

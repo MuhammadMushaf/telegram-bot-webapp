@@ -10,7 +10,7 @@ const Hero = () => {
                 <div className="w-[90%] bg-white rounded-3xl flex items-center gap-2 py-4 px-4 mt-20 whitespace-nowrap max-lg:flex-col max-lg:items-start max-md:mt-10">
                     <div className="w-fit flex items-center gap-2 justify-start py-4">
                         <span className="flex items-center justify-center w-20 max-md:w-16">
-                            <Image src={'/bnb-logo.svg'} width={55} height={55} alt="bnb" />
+                            <Image src={`${process.env.BASE_PATH}${'/bnb-logo.svg'}`} width={55} height={55} alt="bnb" />
                         </span>
                         <p className="font-semibold text-xl">BNB Liquid Staking</p>
                     </div>

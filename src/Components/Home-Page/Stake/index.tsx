@@ -24,7 +24,7 @@ const Stake = () => {
                             <div className='w-full flex items-center justify-between gap-4 '>
                                 <span className='flex items-center gap-2'><FontAwesomeIcon icon={faCircle} className='text-green-500 w-2 h-2' /> Ethereum</span>
                                 <span className={`flex items-center justify-center rounded-full ${data.border ? "border w-20 h-20" : ""}`} style={{ backgroundColor: data.img_bg, borderColor: data.img_border }}>
-                                    <Image src={data.img} height={data.border ? 35 : 78} width={data.border ? 35 : 78} alt={data.shortName}/>
+                                    <Image src={`${process.env.BASE_PATH}${data.img}`} height={data.border ? 35 : 78} width={data.border ? 35 : 78} alt={data.shortName}/>
                                 </span>
                             </div>
  

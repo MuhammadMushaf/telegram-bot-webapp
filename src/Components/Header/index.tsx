@@ -116,10 +116,10 @@ const Header = () => {
                     {userData?.coinsBalance ?
                         <button className="bg-[#5b55e0] text-white rounded-lg py-[6px] w-40 no-underline text-center text-xs px-2 flex flex-col items-center gap-1">
                             <p className="m-0 font-semibold flex items-center gap-1">
-                                {+userData.coinsBalance.toFixed(3)} <Image src='/coin.png' width={16} height={16} alt="tap-doge" />
+                                {+userData.coinsBalance.toFixed(3)} <Image src={`${process.env.BASE_PATH}/coin.png`} width={16} height={16} alt="tap-doge" />
                             </p>
                             <p className="m-0 flex items-center gap-1">
-                                {+userData.coinsBalance.toFixed(3)} <Image src='/coin.png' width={16} height={16} alt="tap-doge" /> = {+(+userData.coinsBalance * 2.25).toFixed(3)} USD
+                                {+userData.coinsBalance.toFixed(3)} <Image src={`${process.env.BASE_PATH}/coin.png`} width={16} height={16} alt="tap-doge" /> = {+(+userData.coinsBalance * 2.25).toFixed(3)} USD
                             </p>
                         </button> : null
                     }
@@ -152,10 +152,10 @@ const Header = () => {
                         {userData?.coinsBalance ?
                             <button className="bg-[#5b55e0] text-white rounded-lg py-[6px] w-40 no-underline text-center text-xs px-2 flex flex-col items-center gap-1">
                                 <p className="m-0 font-semibold flex items-center gap-1">
-                                    {userData.coinsBalance} <Image src='/coin.png' width={16} height={16} alt="tap-doge" />
+                                    {userData.coinsBalance} <Image src={`${process.env.BASE_PATH}/coin.png`} width={16} height={16} alt="tap-doge" />
                                 </p>
                                 <p className="m-0 flex items-center gap-1">
-                                    {userData.coinsBalance} <Image src='/coin.png' width={16} height={16} alt="tap-doge" /> = {userData.coinsBalance * 2.25} USD
+                                    {userData.coinsBalance} <Image src={`${process.env.BASE_PATH}/coin.png`} width={16} height={16} alt="tap-doge" /> = {userData.coinsBalance * 2.25} USD
                                 </p>
                             </button> : null
                         }

@@ -185,7 +185,7 @@ const MarketTab = () => {
       <div className="w-full flex flex-col gap-3 pt-6 border-t mt-6">
         <span className="w-full flex items-center justify-between gap-2 text-sm font-semibold">
           <p className="m-0 font-semibold flex items-center gap-2">
-            <Image src={"/main-coin.png"} width={25} height={25} alt="tap doge" />
+            <Image src={`${process.env.BASE_PATH}${"/main-coin.png"}`} width={25} height={25} alt="tap doge" />
             TAP DOGE
           </p>
           <p>Balance: {+userData.coinsBalance?.toFixed(3)}</p>
